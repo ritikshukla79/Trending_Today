@@ -5,8 +5,6 @@ import News from './components/News';
 import { Route, Routes } from 'react-router-dom';
 import LoadingBar from 'react-top-loading-bar';
 
-
-
 export class App extends Component {
   state = {
     mode: 'light',
