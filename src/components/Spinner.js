@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import loading from './loading.gif';
 import limit from './limit.gif';
 
-export class Spinner extends Component {
-    render() {
-        return (
-            <div className='text-center'>
-                <img src={this.props.status === "error" ? limit : loading} alt='loading' />
-            </div>
-        )
-    }
+const Spinner = (props) => {
+    let {status} =props;
+    return (
+        <div className='text-center'>
+            <img src={status === "error" ? limit : loading} alt='loading' />
+        </div>
+    )
+
 }
 
 export default Spinner
